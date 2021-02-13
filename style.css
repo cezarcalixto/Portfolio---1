@@ -1,0 +1,118 @@
+li a{
+    color: #7a7b7b;
+}
+body{
+    color: #7a7b7b;
+}
+header{
+    background-image: url(./img/bg-main-content.jpg);
+    background-size: cover;
+    height: 950px;
+    font-family: sans-serif;
+}
+.titulo h1, h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.blackout{
+    margin-top: 97px;
+}
+.telaDesktop{
+    margin-top: 100px;
+}
+/*IMAGEM RESPONSIVA COM MEDIA QUERY*/
+@media (max-width: 1199px) {
+    .smartPhone img{
+        margin: 0 auto;
+        max-width: 306px;
+    }
+}
+@media (max-width: 1028px) {
+    .coinBox{
+        position: relative;
+        right: -42px;
+    }
+    .smartPhone img{
+        max-width: 200px;
+        max-height: 300px;
+        position: relative;
+        right: -70px
+    }
+}
+
+@media (max-width: 767.98px) {
+    body{
+        background: linear-gradient(#ecedef, #fff);
+    }
+    header{
+        background: transparent;
+        background-image: none;
+    }
+    .apresentacao{
+        margin-top: -399px;
+    }
+    
+    .smartPhone{
+        display: none;
+    }
+    .coinBox img{
+        max-height: 150px;
+        max-width: 150px;
+    }
+    .telaDesktop{
+        display: none;
+    }
+    
+    .blackout{
+        margin-top: 25px;
+    }
+   
+}
+@media (min-width: 768px) {
+    .telaDesktop{
+        display: block;
+    }
+} 
+
+.smartPhone img{
+    margin: 0 auto;
+}
+.ladoEsquerdo{
+    display: block;
+}
+.coinBox{
+    display: flex;
+    align-items:center;
+}
+.texto{
+position: relative;
+
+}
+.products img{
+    max-width: 268px;
+    max-height: 268px;
+    position: relative;
+    
+}
+.iconeMobile{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.telaMobile{
+    display: none;
+    background: transparent;
+}
+.productContaint{
+    text-align: center;
+}
+.sapato:hover{
+    border: solid 1px #7a7b7b;
+}
+.conheca{
+    background: red;
+    color: white;
+    width: 268px;
+    margin: 0 auto;
+    font-family:sans-serif ;
+}
