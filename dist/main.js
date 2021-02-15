@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector(".telaMobile");document.querySelector(".telaDesktop"),window.addEventListener("resize",(function(){window.innerWidth<750?e.classList.remove("telaMobile"):e.classList.add("telaMobile")}),!0)})();

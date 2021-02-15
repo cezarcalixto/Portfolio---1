@@ -39,8 +39,46 @@ header{
         right: -70px
     }
 }
+[data-buttom="buttom"]{
+    display: none;
+    }
 
 @media (max-width: 767.98px) {
+    .nav{
+        display: none;
+    }
+    .nav.ativado{
+        display: flex;
+        animation-duration: 3s;
+        animation-name: navAnimation;
+    }
+    @keyframes navAnimation {
+        from{
+            transform: translate3d(0, 70px, 0);
+        }
+        to{
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    [data-buttom="buttom"]{
+        display: flex;
+        border: none;
+        }
+    [data-buttom="buttom"]::before{
+        margin-right: 4px;
+        content: '';
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background: #000;
+        box-shadow: 0 4px #000, 0 -4px #000;
+        transition: transform .3s;
+        position: relative;
+        top: 9px;
+        }
+        [data-buttom="buttom"].ativado::before{
+            transform: rotate(-90deg);
+        }
     body{
         background: linear-gradient(#ecedef, #fff);
     }
@@ -116,3 +154,4 @@ position: relative;
     margin: 0 auto;
     font-family:sans-serif ;
 }
+
