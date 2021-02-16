@@ -57,7 +57,9 @@ header{
         position: fixed;
         z-index: 301;
         background: #ecedef;
-    }
+        box-shadow: inset -2px -2px 4px black;
+        border-radius: 6px;
+         }
     .nav li{
         margin: 5px;
         gap: 5px;
@@ -68,7 +70,7 @@ header{
     }
     @keyframes navAnimation {
         from{
-            transform: translate3d(0, -100px, 0);
+            transform: translate3d(-100px, 0, 0);
         }
         to{
             transform: translate3d(0, 0, 0);
